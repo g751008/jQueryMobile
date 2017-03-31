@@ -9,7 +9,9 @@ End Code
         <title></title>
     </head>
     <body>
-    jQuery Mobile是基於jQuery函數庫建立的手機平台框架，2011年推出正式版，由jQuery專案小組開發，一套使用介面系統，不用寫JavaScript程式碼，單純使用HTML標籤就能建立行動裝置網站的使用介面。
+    jQuery Mobile是基於jQuery函數庫建立的手機平台框架，2010年推出初版，2011年推出正式版，由jQuery專案小組開發，一套使用介面系統，不用寫JavaScript程式碼，單純使用HTML標籤就能建立行動裝置網站的使用介面。
+        <br />
+    jQuery Mobile程式檔案是一份內嵌一些外部檔案(jQuery函數庫的JavaScript程式檔、jQuery Mobile核心JavaScript程式檔、jQuery Mobile核心CSS外部樣式檔、jQuery Mobile佈景的外部樣式檔(有自訂佈景才需要))的HTML5網頁文件，所以是一組檔案的集合。
         <br />
         <br />
     ASP.NET有三種開發模型：
