@@ -24,6 +24,14 @@ End Code
         <br />
     jQuery Mobile程式檔案是一份內嵌一些外部檔案(jQuery函數庫的JavaScript程式檔、jQuery Mobile核心JavaScript程式檔、jQuery Mobile核心CSS外部樣式檔、jQuery Mobile佈景的外部樣式檔(有自訂佈景才需要))的HTML5網頁文件，所以是一組檔案的集合。
         <br />
+    到官網"Zip File: jquery.mobile.zip (JavaScript, CSS, and images)"連結下載，demos目錄是範例程式，而必要檔案為images目錄(jQuery Mobile使用的圖示檔)、jQuery.mobile.min.css(jQuery Mobile的CSS樣式檔案)、jquery.mobile.min.js(jQuery Mobile的外部JavaScript程式檔案)
+    ，檔案結尾的min表示壓縮過的檔案(刪除空白字元和換行後的最小尺寸)，min版本為實際執行時使用，需要除錯則用沒有min字尾的版本，可將檔名版號刪除方便以後升級jQuery Mobile。另外需再下載jQuery加入網站就完成安裝。
+        <br />
+    在HTML網頁要使用jQuery Mobile可以使用script和link標籤引用外部檔案，或是使用CDN(將資料放在網路系統的全球多個伺服器，從最近的伺服器取得資料)。範例如下:
+        < link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        < script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></ script>
+        < script src="http://code.jquery.com/jquery-1.7.1.min.js"></ script>
+        <br />
         <br />
     ASP.NET有三種開發模型：
         <br />
