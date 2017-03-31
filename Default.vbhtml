@@ -6,6 +6,17 @@ End Code
     <!--下方是標準HTML5網頁架構-->
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" /><!--Mobile網頁需要額外使用Meta標籤Viewport來告訴瀏覽器所看到的網頁尺寸，否則瀏覽器會以為在瀏覽桌上型電腦網頁，最早出現於Safari-->
+        <!--
+            在content屬性提供參數定義進一步尺寸和縮放資訊:
+            width指定瀏覽器顯示的寬度，device-width是行動裝置的螢幕寬度，也可以指定數值的絕對寬度。
+            height指定瀏覽器顯示的高度，device-height是行動裝置的螢幕高度，也可以指定數值的絕對高度。
+            initial-scale屬性指定畫面用多少倍viewport來顯示，1就是指1個viewport等於1個螢幕像素。
+            user-scalable指定是否允許使用者調整螢幕縮放。
+            minimum-scale指定可以使用的最小縮放(0~10)。
+            maximum-scale指定可以使用的最大縮放(0~10)。
+            target-densityDpi是Android內建瀏覽器支援的額外參數，告訴行動裝置此網頁設計的dpi(Dots per Inch每英吋像數)，值device-dpi(符合行動裝置螢幕的dpi)、high-dpi(高dpi)、medium-dpi(中dpi)、low-dpi(低dpi)或指定40~700。
+        -->        
         <title></title>
     </head>
     <body>
@@ -63,7 +74,9 @@ End Code
     更改預設站台的方法:檔案-選項-左邊選"站台"-更改"預設站台位置"。
         <br>
         WebMatrix執行站台會進入站台首頁，要瀏覽指定網頁，在檔案工作區，檔案上按右鍵選單選擇"在瀏覽器啟動"。
+        <br />
+        WebMatrix可安裝iPhone Simulator Lite版本:執行-新增...-進入瀏覽器擴充組件庫頁面安裝，執行-iPhone開啟，在iPhone畫面的右鍵視窗按File-Exit指令結束iPhone Simulator。Lite版本功能不齊全可安裝Opera Mobile Emulator功能更完整，jQuery Mobile最佳解析度是480x640(VGA Portrait)。
         <br><br>
-        Visual Studio是微軟的整合開發環境，能在同一套應用程式編輯、編譯、偵錯、測試.NET語言應用程式，Express版是Visual Studio產品線的擴充，提供免費實用且最少負擔的開發工具。
+    Visual Studio是微軟的整合開發環境，能在同一套應用程式編輯、編譯、偵錯、測試.NET語言應用程式，Express版是Visual Studio產品線的擴充，提供免費實用且最少負擔的開發工具。
     </body>
 </html>
