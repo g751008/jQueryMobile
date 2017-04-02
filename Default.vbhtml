@@ -20,9 +20,13 @@ End Code
         <title></title>
     </head>
     <body>
-    jQuery Mobile是基於jQuery函數庫建立的手機平台框架，2010年推出初版，2011年推出正式版，由jQuery專案小組開發，一套使用介面系統，不用寫JavaScript程式碼，單純使用HTML標籤就能建立行動裝置網站的使用介面。
+    jQuery Mobile是基於jQuery函數庫和jQuery UI建立的手機平台框架，2010年推出初版，2011年推出正式版，由jQuery專案小組開發，提供輕量化程式碼和樣式，一套使用介面系統，不用寫JavaScript程式碼，單純使用HTML標籤就能建立行動裝置網站的使用介面。
         <br />
     jQuery Mobile程式檔案是一份內嵌一些外部檔案(jQuery函數庫的JavaScript程式檔、jQuery Mobile核心JavaScript程式檔、jQuery Mobile核心CSS外部樣式檔、jQuery Mobile佈景的外部樣式檔(有自訂佈景才需要))的HTML5網頁文件，所以是一組檔案的集合。
+        <br />
+    jQyery Mobile提供AJAX的技術的巡覽系統可以建立動畫效果的頁面轉換，使用卡片觀念來建立頁面結構(基本單位)可減少延遲和下載時間，盒子是HTML網頁文件，每張卡片是一個扮演page角色的div標籤，如同一盒卡片。頁面之間可透過a超連結互相連結。一個jQuery Mobile檔案可建立一個頁面或多頁面，也可以多檔案多頁面。顯示頁面時會隱藏上方URL位址欄位，是為了建立更像原生應用程式的使用介面。
+        <br />
+    WML語言(Wireless Markup Language)就可以一個檔案建立多個虛擬頁面，每個虛擬頁面稱為卡片(Cards)，WML文件稱為一副紙牌(Deck)。
         <br />
     到官網"Zip File: jquery.mobile.zip (JavaScript, CSS, and images)"連結下載，demos目錄是範例程式，而必要檔案為images目錄(jQuery Mobile使用的圖示檔)、jQuery.mobile.min.css(jQuery Mobile的CSS樣式檔案)、jquery.mobile.min.js(jQuery Mobile的外部JavaScript程式檔案)
     ，檔案結尾的min表示壓縮過的檔案(刪除空白字元和換行後的最小尺寸)，min版本為實際執行時使用，需要除錯則用沒有min字尾的版本，可將檔名版號刪除方便以後升級jQuery Mobile。另外需再下載jQuery加入網站就完成安裝。

@@ -1,26 +1,38 @@
-<!DOCTYPE html> <!--jQuery Mobile程式是一個HTML5網頁-->
+﻿<!DOCTYPE html>
+ <!--jQuery Mobile程式是一個HTML5網頁-->
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8" /> <!--指定編碼為utf-8，可以正確顯示中文內容-->
-        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--指定寬度跟縮放比例-->
-        <title></title>
-        <link rel="stylesheet" href="jquery.mobile.min.css" /> <!--含括jQuery和jQuery Mobile程式碼檔案和樣式表-->
-        <script src="jquery.mobile.min.js"></script>
-        <script src="jquery-3.2.0.min.js"></script>
-    </head>
-    <body>
-        <!--jQuery Mobile使用標記驅動(Markup-driven)來配置頁面，用data-role屬性來定義div元素是甚麼-->
-        <div data-role="page">
-            <div data-role="header">
-                標題列
-            </div>
-            <div data-role="content">
-                本文內容
-            </div>
-            <div data-role="footer">
-                註腳列
-            </div>
+<head>
+    <meta charset="utf-8" /> <!--指定編碼為utf-8，可以正確顯示中文內容-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--指定寬度跟縮放比例-->
+    <title></title>
+    <link rel="stylesheet" href="jquery.mobile.min.css" /> <!--含括jQuery和jQuery Mobile程式碼檔案和樣式表-->
+    <script src="jquery.mobile.min.js"></script>
+    <script src="jquery-3.2.0.min.js"></script>
+</head>
+<body>
+    <!--jQuery Mobile使用標記驅動(Markup-driven)來配置頁面，用data-role屬性來定義div元素扮演甚麼角色-->
+    <div data-role="page">
+        <!--page定義頁面，jQuery Mobile顯示使用介面的基本單位-->
+        <div data-role="header">
+            標題列，可以在此元素建立巡覽列，如果文字太長最後會顯示...縮寫符號，此元素可有可無。
         </div>
-    </body>
+        <div data-role="content">
+            本文內容，頁面的必須元素。
+            <div data-role="dialog"></div><!--dialog定義對話方塊的頁面-->
+            <div data-role="navbar"></div><!--navbar定義巡覽工具列-->
+            <div data-role="button"></div><!--button產生按鈕介面元件-->
+            <div data-role="controlgroup"></div><!--controlgroup群組介面元素成水平或垂直排列-->
+            <div data-role="listview"></div><!--建立ListView元件-->
+            <div data-role="collapsible"></div><!--建立可摺疊內容-->
+            <div data-role="collapsible-set"></div><!--建立手風琴選單-->
+            <div data-role="fieldcontain"></div><!--表單欄位的容器-->
+            <div data-role="slider"></div><!--建立滑動軸-->
+            <div data-role="nojs"></div><!--在支援jQuery Mobile瀏覽器隱藏元素-->
+        </div>
+        <div data-role="footer" data-position="fixed">
+            註腳列，可以在此元素建立巡覽列，data-position="fixed"讓註腳列永遠顯示在底部，此元素可有可無。
+        </div>
+    </div>
+</body>
 </html>
